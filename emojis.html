@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300&family=Jua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center; /* 모든 내용 가운데 정렬 */
+        }
+        .image-container img {
+            display: block;
+            margin: 0 auto; /* 이미지 가운데 정렬 */
+            max-width: 20%; /* 이미지 크기 조절 (필요에 따라 조정 가능) */
+            height: auto; /* 비율 유지하면서 높이 조절 */
+        }
+        .font-size-control {
+            margin: 20px 0;
+        }
+        .emoji-link {
+            display: block;
+            margin: 20px auto;
+            font-size: 3em;
+            text-decoration: none;
+            color: #00c080;
+        }
+        .scroll-button {
+            position: fixed;
+            right: 15px;
+            bottom: 10px;
+            z-index: 1000;
+        }
+        .scroll-button a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #ffc250;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+        }
+        .side-buttons {
+            position: fixed;
+            top: 50%;
+            right: 15px; /* 버튼 좌우 배치 위치 조절 */
+            z-index: 1000;
+            transform: translateY(-50%);
+        }
+        .side-buttons a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ffc250;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="emojis-page">
+    <header class="emojis-header">
+        emoticon
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="profile.html">프로필</a></li>
+                <li class="nav-item"><a class="nav-link" href="3d-artworks.html">3D 작업물</a></li>
+                <li class="nav-item"><a class="nav-link" href="illustrations.html">동물일러스트</a></li>
+                <li class="nav-item"><a class="nav-link" href="illustrations2.html">인물화</a></li>
+                <li class="nav-item"><a class="nav-link" href="emojis.html">이모티콘</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">굿즈제작</a></li>
+                <li class="nav-item"><a class="nav-link" href="handmade.html">핸드메이드</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="emoji-section" class="container mt-5">
+        <a href="https://ogqmarket.naver.com/artworks/sticker/detail?artworkId=5971219965a92" target="_blank" class="emoji-link">☞ 네이버 OGQ 이모티콘 보러가기 ☜</a>
+        <div class="image-container">
+            <img src="프로틴냥2.PNG" class="img-fluid" alt="3D Artwork 1">
+        </div>
+        <br>      
+        <br>
+        <br>
+
+        <!-- Buttons for section navigation -->
+        <div class="side-buttons">
+            <a href="#emoji-section">네이버 OGQ</a>
+            <a href="#beauty-blogger">뷰티 블로거</a>
+            <a href="#college-emojis">대학생 감자</a>
+        </div>
+    </div>
+
+
+    <!-- 뷰티 블로거 Section -->
+    <div id="beauty-blogger" class="container mt-5">
+        <h1>💄뷰티 블로거 이모티콘💄</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center"> <!-- 가운데 정렬을 위해 offset-md-3과 text-center 클래스 추가 -->
+                <img src="안녕하세요르.png" class="img-fluid" alt="emojis 1">
+            </div>
+            <div class="w-100"></div>
+            <br>      
+            <br>
+            <br>
+            <div class="col-md-4">
+                <img src="추천.png" class="img-fluid" alt="emojis 1">
+            </div>
+            <div class="col-md-4">
+                <img src="비추천.png" class="img-fluid" alt="emojis 2">
+            </div>
+            <div class="col-md-4">
+                <img src="제품제공.png" class="img-fluid" alt="emojis 3">
+            </div>
+            <div class="w-100"></div>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-4">
+                <img src="지갑 텅텅.png" class="img-fluid" alt="emojis 1">
+            </div>
+            <div class="col-md-4">
+                <img src="정권찌르기2.1.png" class="img-fluid" alt="emojis 2">
+            </div>
+            <div class="col-md-4">
+                <img src="재구매.png" class="img-fluid" alt="emojis 3">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- 대학생 감자 Section -->
+    <div id="college-emojis" class="container mt-5">
+        <h1>📚대학생 이모티콘📚</h1>
+                <br>
+                <br>
+                <div class="row">
+                    <!-- 대학생 이모티콘 이미지 및 설명 -->
+                    <div class="col-md-6 offset-md-3 text-center">
+                        <img src="감교수님2.3 쩌렁.png" class="img-fluid" alt="College Emoji 1">
+                    </div>
+                    <div class="w-100"></div>
+                    <br>      
+                    <br>
+                    <br>
+                    <!-- 첫 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감종강과 개강1.2.png" class="img-fluid" alt="College Emoji 2">
+                    </div>
+                    <!-- 두 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감종강과 개강2.2.png" class="img-fluid" alt="College Emoji 3">
+                    </div>
+                    <!-- 세 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감과제산더미2.png" class="img-fluid" alt="College Emoji 4">
+                    </div>
+
+                    <div class="w-100"></div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- 첫 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감할 일.png" class="img-fluid" alt="College Emoji 5">
+                    </div>
+                    <!-- 두 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감발등에 불3.png" class="img-fluid" alt="College Emoji 6">
+                    </div>
+                    <!-- 세 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감현실도피.png" class="img-fluid" alt="College Emoji 7">
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- 첫 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감울망.png" class="img-fluid" alt="College Emoji 5">
+                    </div>
+                    <!-- 두 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감울망2.png" class="img-fluid" alt="College Emoji 6">
+                    </div>
+                    <!-- 세 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감노려봄3.png" class="img-fluid" alt="College Emoji 7">
+                    </div>
+                    <div class="w-100"></div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- 첫 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감밴드감자.png" class="img-fluid" alt="College Emoji 5">
+                    </div>
+                    <!-- 두 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감조별.png" class="img-fluid" alt="College Emoji 6">
+                    </div>
+                    <!-- 세 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감쏘주드링킹.png" class="img-fluid" alt="College Emoji 7">
+                    </div>
+                    <div class="w-100"></div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- 첫 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감뜨악4.png" class="img-fluid" alt="College Emoji 5">
+                    </div>
+                    <!-- 두 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감수염.png" class="img-fluid" alt="College Emoji 6">
+                    </div>
+                    <!-- 세 번째 이미지 -->
+                    <div class="col-md-4">
+                        <img src="감빤히.png" class="img-fluid" alt="College Emoji 7">
+                        <br>      
+                        <br>
+                        <br>
+                        <br>      
+                        <br>
+                        <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll buttons -->
+    <div class="scroll-button">
+        <a id="scrollToTopBtn">△</a>
+        <a id="scrollToBottomBtn">▽</a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#font-size').on('input', function() {
+                var fontSize = $(this).val() + 'px';
+                $('body').css('font-size', fontSize);
+            });
+
+            // 위로 이동 버튼 클릭 시
+        document.getElementById("scrollToTopBtn").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // 아래로 이동 버튼 클릭 시
+        document.getElementById("scrollToBottomBtn").onclick = function() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        };
+
+            $('.side-buttons a[href="#emoji-section"]').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').scrollTop($('#emoji-section').offset().top);
+            });
+        });
+    </script>
+</body>
+</html>

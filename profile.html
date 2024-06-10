@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300&family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            text-align: center; /* 모든 내용 가운데 정렬 */
+            font-family: 'Jua', sans-serif; /* 폰트 설정 */
+        }
+        .profile-group {
+            display: flex;
+            align-items: center; /* 그룹을 수직 가운데 정렬 */
+            justify-content: center; /* 그룹을 수평 가운데 정렬 */
+            margin-bottom: 20px; /* 그룹과 다음 요소 간의 간격 조절 */
+        }
+        .profile-pic {
+            margin-right: -50px; /* 프로필 사진과 텍스트 간의 간격 조절 */
+            border-radius: 7%; /* 사진을 원형으로 표시 */
+        }
+        h1 {
+            font-size: 3rem; /* 제목 폰트 크기 */
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.6rem; /* 텍스트 폰트 크기 */
+            margin: 9px 0;
+        }
+    </style>
+</head>
+<body class="profile-page">
+    <header class="profile-header">
+        profile
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="profile.html">프로필</a></li>
+                <li class="nav-item"><a class="nav-link" href="3d-artworks.html">3D 작업물</a></li>
+                <li class="nav-item"><a class="nav-link" href="illustrations.html">동물일러스트</a></li>
+                <li class="nav-item"><a class="nav-link" href="illustrations2.html">인물화</a></li>
+                <li class="nav-item"><a class="nav-link" href="emojis.html">이모티콘</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">굿즈제작</a></li>
+                <li class="nav-item"><a class="nav-link" href="handmade.html">핸드메이드</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row profile-group">
+            <div class="col-md-5">
+                <img src="박시은 증명사진2.2.jpg" class="profile-pic img-fluid" alt="Profile Picture" width="300">
+            </div>
+            <div class="col-md-7 mt-10">
+                <h1>박시은</h1>
+                <p>생년월일 : 2000-07-31</p>
+                <p>학력 : 경성대학교 미디어콘텐츠학과 재학</p>
+                <p>학번 : 2020660013</p>
+                <p>취득 자격증<br>
+                - GTQ그래픽기술자격 1급<br>
+                - 전산회계 2급<br>
+                - 컴퓨터 활용능력 2급<br>
+                - 정보기술자격(ITQ) A등급-엑셀<br>
+                - 정보기술자격(ITQ) A등급-파워포인트<br>
+                - 정보기술자격(ITQ) A등급-아래한글</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

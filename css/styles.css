@@ -1,0 +1,164 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Jua', Arial, sans-serif;
+}
+
+/* 메인 페이지 상단 배너 */
+body.main-page {
+    background-color: #fff0fe; /* 연한 연보라색 */
+}
+
+header.main-header {
+    background-color: #d8b4fe; /* 연보라색 */
+    color: white;
+    padding: 50px 0; /* 상단 배너 높이 조정*/
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 소개 페이지 스타일 */
+body.profile-page {
+    background-color: #fbf0ff; /* 연한 연보라색 */
+}
+
+header.profile-header {
+    background-color: #e7c6ff; /* 연보라색 */
+    color: rgb(169, 101, 211);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 3D 작업물 페이지 스타일 */
+body._3d-artworks-page {
+    background-color: #ffe6f0; /* 연분홍색 */
+}
+
+header._3d-artworks-header {
+    background-color: #ffa5c8; /* 분홍색 */
+    color: rgb(221, 53, 137);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 동물 일러스트 페이지 스타일 */
+body.illustrations-page {
+    background-color: #f3ffe6; /* 연한 연두색 */
+}
+
+header.illustrations-header {
+    background-color: #ccffb9; /* 연두색 */
+    color: rgb(54, 119, 61);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 인물화 페이지 스타일 */
+body.illustrations2-page {
+    background-color: #e6fff0; /* 연한 연두색 */
+}
+
+header.illustrations2-header {
+    background-color: #9fffd4; /* 연두색 */
+    color: rgb(54, 119, 108);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 이모티콘 페이지 스타일 */
+body.emojis-page {
+    background-color: #fff9e6; /* 연한 노랑색 */
+}
+
+header.emojis-header {
+    background-color: #fff0b3; /* 연노랑색 */
+    color: rgb(255, 140, 69);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 굿즈제작 페이지 스타일 */
+body.goods-page {
+    background-color: #ffeeee; /* 연한 노랑색 */
+}
+
+header.goods-header {
+    background-color: #ffafaf; /* 연노랑색 */
+    color: rgb(255, 253, 253);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 핸드메이드 제품 페이지 스타일 */
+body.handmade-page {
+    background-color: #e6f7ff; /* 연한 하늘색 */
+}
+
+header.handmade-header {
+    background-color: #99d6ff; /* 하늘색 */
+    color: rgb(42, 116, 255);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+/* 내비게이션 바 스타일 */
+.navbar-nav {
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    display: flex;
+    justify-content: center; /* 내비게이션 바 아이템들을 수평 가운데 정렬 */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Jua', sans-serif; /* Jua 폰트로 변경 */
+    font-size: 1.2rem;
+    text-align: center; /* 내비게이션 바 아이템들 텍스트 가운데 정렬 */
+}
+
+/* 프로필 사진 스타일 */
+.profile-pic {
+    border-radius: 10px; /* 모서리가 살짝 둥근 직사각형 */
+    max-width: 100%; /* 부모 요소의 너비에 맞게 조정 */
+    height: auto; /* 높이를 자동으로 조정 */
+}
+
+/* 추가 스타일 */
+h1, p {
+    font-family: 'Jua', sans-serif;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    header.main-header {
+        font-size: 2rem;
+        padding: 30px 0;
+    }
+
+    header.profile-header,
+    header._3d-artworks-header,
+    header.illustrations-header,
+    header.illustrations2-header,
+    header.emojis-header,
+    header.goods-header,
+    header.handmade-header {
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}

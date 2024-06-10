@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Artworks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300&family=Jua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+        }
+        .image-container img {
+            margin-bottom: 20px;
+        }
+        .description p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            text-align: center;
+        }
+        .video-container {
+            margin-bottom: 20px; /* 영상 아래쪽에 여백 추가 */
+        }
+        .scroll-button {
+            position: fixed;
+            right: 15px;
+            bottom: 10px;
+            z-index: 1000;
+        }
+        .scroll-button a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #ff94d4;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+        }
+        .side-buttons {
+            position: fixed;
+            top: 50%;
+            right: 15px; /* 버튼 좌우 배치 위치 조절 */
+            z-index: 1000;
+            transform: translateY(-50%);
+        }
+        .side-buttons a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ff94d4;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .section-title {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="_3d-artworks-page">
+    <header class="_3d-artworks-header">
+        3D Artworks
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="profile.html">프로필</a></li>
+                <li class="nav-item"><a class="nav-link" href="3d-artworks.html">3D 작업물</a></li>
+                <li class="nav-item"><a class="nav-link" href="illustrations.html">동물일러스트</a></li>
+                <li class="nav-item"><a class="nav-link" href="illustrations2.html">인물화</a></li>
+                <li class="nav-item"><a class="nav-link" href="emojis.html">이모티콘</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">굿즈제작</a></li>
+                <li class="nav-item"><a class="nav-link" href="handmade.html">핸드메이드</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 mx-auto" id="images-section">
+                <div class="section-title">📸스크린 샷📸</div>
+                <div class="image-container">
+                    <img src="시포디렌더1.png" class="img-fluid" alt="3D Artwork 1">
+                </div>
+                <div class="image-container">
+                    <img src="시포디렌더3.png" class="img-fluid" alt="3D Artwork 2">
+                </div>
+                <div class="image-container">
+                    <img src="시포디렌더6.png" class="img-fluid" alt="3D Artwork 3">
+                </div>
+                <div class="image-container">
+                    <img src="시포디렌더5.png" class="img-fluid" alt="3D Artwork 4">
+                </div>
+                <div class="image-container">
+                    <img src="시포디렌더4.png" class="img-fluid" alt="3D Artwork 5">
+                </div>
+                <div class="image-container">
+                    <img src="시포디렌더8.png" class="img-fluid" alt="3D Artwork 6">
+                </div>
+                <div class="image-container">
+                    <img src="시포디렌더10.png" class="img-fluid" alt="3D Artwork 7">
+                </div>
+                <div class="description">
+                    <p>
+                        [사용 프로그램]<br>
+                        Cinema4D<br>
+                        <br>
+                        [컨셉]<br>
+                        '과자공장' '과자마을'을 컨셉으로 하여 과자가 만들어지는 기계와<br>
+                        그 주변에 케이크, 마카롱, 파르페 등 여러가지 디저트를 배치함<br>
+                        <br>
+                        모델링 후, 재질을 직접 만들거나 red shift에 있는 재질을 활용해서<br>
+                        전체적인 분위기와 컨셉에 맞게 수정 후 모델링한 오브제에 적용시킴
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div id="video-section" class="col-md-10 mx-auto">
+                <div class="section-title">📽️영상📽️</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/l1IdW2GY4gc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="description">
+                    <p>
+                        [배경음악]<br>
+                        'Oneul'의 'Pistacio Ice Cream'라는 음악을 <br>
+                        Adobe Audition 프로그램으로 영상 길이에 맞게 편집하여 사용 <br>
+                        <br>
+                        [영상 편집]<br>
+                        Adobe의 After Effects와 Premiere Pro를 활용하여 <br>
+                        컷 편집 + 색감 보정 + BGM 삽입 등의 작업을 거쳐 최종 영상 제작<br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="side-buttons">
+        <a href="#images-section">사진 보기</a>
+        <a href="#video-section">영상 보기</a>
+    </div>
+
+    <div class="scroll-button">
+        <a id="scrollToTopBtn">▲</a>
+        <a id="scrollToBottomBtn">▼</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // 위로 이동 버튼 클릭 시
+        document.getElementById("scrollToTopBtn").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // 아래로 이동 버튼 클릭 시
+        document.getElementById("scrollToBottomBtn").onclick = function() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
