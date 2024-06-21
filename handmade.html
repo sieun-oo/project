@@ -28,6 +28,42 @@
             width: 120%; /* 이미지 크기 조절 */
             height: auto;
         }
+        .scroll-button {
+            position: fixed;
+            right: 15px;
+            bottom: 10px;
+            z-index: 1000;
+        }
+        .scroll-button a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #72b2ff;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+        }
+        .side-buttons {
+            position: fixed;
+            top: 50%;
+            right: 15px; /* 버튼 좌우 배치 위치 조절 */
+            z-index: 1000;
+            transform: translateY(-50%);
+        }
+        .side-buttons a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #72b2ff;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body class="handmade-page">
@@ -52,26 +88,171 @@
         </div>
     </nav>
 
-    <div class="container mt-5 center-content">
+    <!-- Buttons for section navigation -->
+    <div class="side-buttons">
+        <a href="#fullfy">⠀인형⠀</a>
+        <a href="#keyring">⠀키링⠀</a>
+    </div>
+</div>
+
+
+    <div id="fullfy" class="container mt-5 center-content">
         <h1>🎀인형🎀</h1>
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <img src="현냥이편집2.png" class="img-fluid" alt="Emoji 1">
+                <img src="핸현냥이편집2.png" class="img-fluid" alt="Emoji 1">
                 <p>🧸손바느질로 만든 인형입니다 쥰내 힘들었어용🧸</p>
             </div>
             <div class="w-100"></div>
-            <br>
+            <br><br>
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <img src="쟈근토끼 하튜.png" class="img-fluid" alt="Emoji 1">
+                    <img src="핸쟈근토끼 하튜.png" class="img-fluid" alt="Emoji 1">
                     <p>🧸기욥죠,, 노곤한 토끼입니다🧸</p>
                 </div>
+                <div class="w-100"></div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <img src="핸톡기와 클로버.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <img src="핸강쥐둘.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸뽀글토끼.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸뿌글곰.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸노곤클로버.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <img src="핸클로버.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br><br><br><br><br><br><br><br>
+
+                <div id="keyring" class="container mt-5 center-content">
+                    <h1>🎀키링🎀</h1>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸멜팅 블랙키링.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸멜팅 그린 클로버 키링.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸핑크 클로버 키링3.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버핸그린</p>
+                    </div>
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸그린 하트 클로버 키링2.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버핸그린 하트 클로버 키링2</p>
+                    </div>
+
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸블루하트클로버2.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버핸그린 하트 클로버 키링2</p>
+                    </div>
+
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸트리플하트 키링.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버핸그린 하트 클로버 키링2</p>
+                    </div>
+
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸유량핑2.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버핸그린 하트 클로버 키링2</p>
+                    </div>
+
+                    <div class="w-100"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <img src="핸유량초2.png" class="img-fluid" alt="Emoji 1">
+                        <p>🧸기욥죠,, 노곤한 토끼입니다🧸톡기와 클로버핸그린 하트 클로버 키링2</p>
+                    </div>
+                    
+
             <!-- 작업물 추가 -->
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- Scroll buttons -->
+    <div class="scroll-button">
+        <a id="scrollToTopBtn">△</a>
+        <a id="scrollToBottomBtn">▽</a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#font-size').on('input', function() {
+                var fontSize = $(this).val() + 'px';
+                $('body').css('font-size', fontSize);
+            });
+
+            // 위로 이동 버튼 클릭 시
+        document.getElementById("scrollToTopBtn").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // 아래로 이동 버튼 클릭 시
+        document.getElementById("scrollToBottomBtn").onclick = function() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        };
+
+            $('.side-buttons a[href="#emoji-section"]').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').scrollTop($('#emoji-section').offset().top);
+            });
+        });
+    </script>
 </body>
 </html>
+
