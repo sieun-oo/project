@@ -12,22 +12,59 @@
             position: fixed;
             cursor: pointer;
             user-select: none;
-            font-size: 40px; /* 기본 이모티콘 크기 */
+            font-size: 60px; /* 기본 이모티콘 크기 */
         }
 
-        .bone {
-            left: 200px; /* 왼쪽에 위치 */
-            top: 50%;
+        /* 왼쪽에 위치한 새로운 이모티콘 */
+        .ribbon {
+            left: 400px; /* 왼쪽에 위치 */
+            top: 40%;
             transform: translateY(-60%);
-            font-size: 60px;
+        }
+
+        .sun {
+            left: 400px; /* 왼쪽에 위치 */
+            top: 55%;
+            transform: translateY(-60%);
+        }
+
+        .clover {
+            left: 400px; /* 왼쪽에 위치 */
+            top: 70%;
+            transform: translateY(-60%);
+        }
+
+        .cloud {
+            left: 400px; /* 왼쪽에 위치 */
+            top: 85%;
+            transform: translateY(-60%);
+        }
+
+        
+        .meat {
+            right: 250px; /* 오른쪽에 위치 */
+            top: 40%;
+            transform: translateY(-60%);
         }
 
         .fish {
-            right: 200px; /* 오른쪽에 위치 */
-            top: 50%;
+            right: 250px; /* 오른쪽에 위치 */
+            top: 55%;
             transform: translateY(-60%);
-            font-size: 60px;
         }
+
+        .apple {
+            right: 250px; /* 오른쪽에 위치 */
+            top: 70%;
+            transform: translateY(-60%);
+        }
+
+        .cheese {
+            right: 250px; /* 오른쪽에 위치 */
+            top: 85%;
+            transform: translateY(-60%);
+        }
+    
 
         .heart {
             position: absolute;
@@ -44,6 +81,13 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+
+        /* 사진 크기 조절 */
+        .profile-pic {
+            width: 100%; /* 기본 너비 */
+            max-width: 800px; /* 최대 너비 */
+            height: auto; /* 높이는 자동 조절 */
         }
     </style>
 </head>
@@ -71,20 +115,31 @@
 
     <div class="container mt-2">
         <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <div class="col-md-9 offset-md-2">
                 <img src="마설구 텍스트 변형.png" class="profile-pic img-fluid" alt="Profile Picture">
             </div>
         </div>
     </div>
 
+    <!-- 오른쪽에 추가된 이모티콘들 -->
     <div class="emoji fish" id="fish">🐟</div>
-    <div class="emoji bone" id="bone">🦴</div>
+    <div class="emoji meat" id="meat">🍖</div>
+    <div class="emoji apple" id="apple">🍏</div>
+    <div class="emoji cheese" id="cheese">🧀</div>
     <div class="heart">💖</div>
+
+    <!-- 왼쪽에 추가된 이모티콘들 -->
+    <div class="emoji ribbon" id="ribbon">🎀</div>
+    <div class="emoji sun" id="sun">☀️</div>
+    <div class="emoji clover" id="clover">🍀</div>
+    <div class="emoji cloud" id="star">☁️</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+
+        
         document.addEventListener('DOMContentLoaded', function() {
             const emojis = document.querySelectorAll('.emoji');
             const heart = document.querySelector('.heart');
@@ -104,6 +159,7 @@
                         activeEmoji.style.top = e.pageY + 'px';
                     }
                 });
+                
 
                 document.addEventListener('mouseup', function() {
                     if (activeEmoji) {
@@ -118,9 +174,13 @@
                         activeEmoji.style.top = initialPosition.top;
                         activeEmoji = null;
                     }
+
+                    
                 });
             });
         });
+
+        
     </script>
 </body>
 </html>
