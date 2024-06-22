@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300&family=Jua&display=swap" rel="stylesheet">
     <style>
+        .center-content {
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
         #scrollToTopBtn, #scrollToBottomBtn {
             position: fixed;
             right: 30px;
@@ -29,6 +32,29 @@
 
         #scrollToBottomBtn {
             bottom: 20px;
+        }
+        /* 우측 중앙 정렬 */
+        .google-form-btn {
+            position: fixed;
+            right: 3%;
+            transform: translateX(50%);
+            bottom: 450px; /* 원하는 위치로 조정 가능 */
+            text-align: center;
+        }
+
+        .google-form-btn a {
+            display: block;
+            background-color: transparent; /* 원하는 배경색 */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 50px;
+        }
+
+        .google-form-btn a img {
+            vertical-align: middle;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -54,6 +80,11 @@
         </div>
     </nav>
 
+    
+
+    <div id="llustrations" class="container mt-5 center-content">
+        <h1>[ 반려동물 일러스트 ]</h1>
+        <div class="row">
     <div class="container mt-5">
         <div class="row">
             <!-- 동물 그림 첨부 및 설명 -->
@@ -125,6 +156,15 @@
             </div>
             <!-- 작업물 추가 -->
         </div>
+    </div>
+
+
+    <!-- 구글 폼 신청 버튼 -->
+    <div class="google-form-btn">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGJ47DxaKiPSDWfu6MF8fimuJtTY89E2CJphH_uavF-7uCMg/viewform" class="btn" target="_blank" rel="noopener noreferrer">
+            <width="20px" height="20px">
+                📑
+        </a>
     </div>
 
     <div class="container mt-5">

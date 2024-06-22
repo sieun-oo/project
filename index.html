@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300&family=Jua&display=swap" rel="stylesheet">
+    <style>
+        .emoji {
+            position: fixed;
+            cursor: pointer;
+            user-select: none;
+            font-size: 40px; /* 기본 이모티콘 크기 */
+        }
+
+        .bone {
+            left: 200px; /* 왼쪽에 위치 */
+            top: 50%;
+            transform: translateY(-60%);
+            font-size: 60px;
+        }
+
+        .fish {
+            right: 200px; /* 오른쪽에 위치 */
+            top: 50%;
+            transform: translateY(-60%);
+            font-size: 60px;
+        }
+
+        .heart {
+            position: absolute;
+            display: none;
+            font-size: 60px; /* 하트 크기 */
+        }
+
+        .emoji-controls {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body class="main-page">
     <header class="main-header">
@@ -32,14 +71,56 @@
 
     <div class="container mt-2">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-10 offset-md-1">
                 <img src="마설구 텍스트 변형.png" class="profile-pic img-fluid" alt="Profile Picture">
             </div>
         </div>
     </div>
 
+    <div class="emoji fish" id="fish">🐟</div>
+    <div class="emoji bone" id="bone">🦴</div>
+    <div class="heart">💖</div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const emojis = document.querySelectorAll('.emoji');
+            const heart = document.querySelector('.heart');
+            let activeEmoji = null;
+            let initialPosition = {};
+
+            emojis.forEach(emoji => {
+                emoji.addEventListener('mousedown', function(e) {
+                    activeEmoji = emoji;
+                    initialPosition = { left: emoji.style.left, top: emoji.style.top };
+                    emoji.style.position = 'absolute';
+                });
+
+                document.addEventListener('mousemove', function(e) {
+                    if (activeEmoji) {
+                        activeEmoji.style.left = e.pageX + 'px';
+                        activeEmoji.style.top = e.pageY + 'px';
+                    }
+                });
+
+                document.addEventListener('mouseup', function() {
+                    if (activeEmoji) {
+                        heart.style.left = activeEmoji.style.left;
+                        heart.style.top = activeEmoji.style.top;
+                        heart.style.display = 'block';
+                        setTimeout(function() {
+                            heart.style.display = 'none';
+                        }, 1000);
+                        
+                        activeEmoji.style.left = initialPosition.left;
+                        activeEmoji.style.top = initialPosition.top;
+                        activeEmoji = null;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
