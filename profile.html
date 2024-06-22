@@ -31,6 +31,21 @@
             font-size: 1.6rem; /* 텍스트 폰트 크기 */
             margin: 9px 0;
         }
+        #musicPageBtn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: transparent; /* 투명 배경 */
+            color: white; /* 흰색 글자 */
+            border: transparent; /* 투명 배경 */
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            line-height: 60px;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="profile-page">
@@ -38,7 +53,7 @@
         profile
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -75,6 +90,8 @@
             </div>
         </div>
     </div>
+
+    <button id="musicPageBtn" onclick="window.location.href='music.html'">🎵</button>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

@@ -27,25 +27,29 @@
             text-decoration: none;
             color: #00c080;
         }
-        .scroll-button {
+        #scrollToTopBtn, #scrollToBottomBtn {
             position: fixed;
-            right: 15px;
-            bottom: 10px;
-            z-index: 1000;
-        }
-        .scroll-button a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-            background-color: #ffc250;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            border-radius: 10px;
-            text-decoration: none;
+            right: 30px;
+            display: none;
             width: 40px;
             height: 40px;
+            background-color: #ffc250;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 41px;
         }
+
+        #scrollToTopBtn {
+            bottom: 70px;
+        }
+
+        #scrollToBottomBtn {
+            bottom: 20px;
+        }
+
         .side-buttons {
             position: fixed;
             top: 50%;
@@ -70,7 +74,7 @@
         emoticon
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -256,24 +260,15 @@
         </div>
     </div>
 
-    <!-- Scroll buttons -->
-    <div class="scroll-button">
-        <a id="scrollToTopBtn">△</a>
-        <a id="scrollToBottomBtn">▽</a>
-    </div>
 
+    <button id="scrollToTopBtn">▲</button>
+    <button id="scrollToBottomBtn">▼</button>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#font-size').on('input', function() {
-                var fontSize = $(this).val() + 'px';
-                $('body').css('font-size', fontSize);
-            });
-
-            // 위로 이동 버튼 클릭 시
+        // 위로 이동 버튼 클릭 시
         document.getElementById("scrollToTopBtn").onclick = function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         };
@@ -283,11 +278,25 @@
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         };
 
-            $('.side-buttons a[href="#emoji-section"]').on('click', function(event) {
-                event.preventDefault();
-                $('html, body').scrollTop($('#emoji-section').offset().top);
-            });
-        });
+        // 스크롤 이벤트 리스너 추가
+        window.onscroll = function() {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            var scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
+
+            // 페이지가 스크롤되면 버튼 보이기
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+                scrollToBottomBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+                scrollToBottomBtn.style.display = "block";
+            }
+
+            // 페이지 끝에 도달하면 아래로 이동 버튼 숨기기
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollToBottomBtn.style.display = "none";
+            }
+        };
     </script>
 </body>
 </html>

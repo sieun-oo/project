@@ -38,25 +38,29 @@
             font-size: 2em;
             margin: 50px 0;
         }
-        .scroll-button {
+        #scrollToTopBtn, #scrollToBottomBtn {
             position: fixed;
-            right: 15px;
-            bottom: 10px;
-            z-index: 1000;
-        }
-        .scroll-button a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-            background-color: #ff9686;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            border-radius: 10px;
-            text-decoration: none;
+            right: 30px;
+            display: none;
             width: 40px;
             height: 40px;
+            background-color: #ff9282;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 41px;
         }
+
+        #scrollToTopBtn {
+            bottom: 70px;
+        }
+
+        #scrollToBottomBtn {
+            bottom: 20px;
+        }
+
         .side-buttons {
             position: fixed;
             top: 50%;
@@ -81,7 +85,7 @@
         goods
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -133,7 +137,7 @@
         <br>
         <br>
         <!-- 엽서 Section -->
-        <div class="section-title">💌엽서💌</div>
+        <div id="postcard-carousel2" class="section-title">💌엽서💌</div>
         <div id="postcard-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -270,15 +274,14 @@
 
     <div class="side-buttons">
         <a href="#sticker-carousel2">스티커</a>
-        <a href="#postcard-carousel">엽서</a>
+        <a href="#postcard-carousel2">엽서</a>
         <a href="#memoji-carousel">메모지</a>
         <a href="#talisman-front-carousel">부적카드</a>
     </div>
 
-    <div class="scroll-button">
-        <a id="scrollToTopBtn">▲</a>
-        <a id="scrollToBottomBtn">▼</a>
-    </div>
+
+    <button id="scrollToTopBtn">▲</button>
+    <button id="scrollToBottomBtn">▼</button>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
@@ -292,6 +295,26 @@
         // 아래로 이동 버튼 클릭 시
         document.getElementById("scrollToBottomBtn").onclick = function() {
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        };
+
+        // 스크롤 이벤트 리스너 추가
+        window.onscroll = function() {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            var scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
+
+            // 페이지가 스크롤되면 버튼 보이기
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+                scrollToBottomBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+                scrollToBottomBtn.style.display = "block";
+            }
+
+            // 페이지 끝에 도달하면 아래로 이동 버튼 숨기기
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollToBottomBtn.style.display = "none";
+            }
         };
     </script>
 </body>

@@ -31,6 +31,20 @@ header.profile-header {
     font-family: 'Bagel Fat One', cursive;
 }
 
+/* 음악 소개 페이지 스타일 */
+body.music-page {
+    background-color: #d2c3cc; /* 연한 연보라색 */
+}
+
+header.music-header {
+    background-color: #ac819b; /* 연보라색 */
+    color: rgb(94, 48, 64);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bagel Fat One', cursive;
+}
+
 /* 3D 작업물 페이지 스타일 */
 body._3d-artworks-page {
     background-color: #ffe6f0; /* 연분홍색 */
@@ -153,7 +167,8 @@ h1, p {
     header.illustrations2-header,
     header.emojis-header,
     header.goods-header,
-    header.handmade-header {
+    header.handmade-header,
+    header.music-header {
         font-size: 1.5rem;
         padding: 20px 0;
     }
