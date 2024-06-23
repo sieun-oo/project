@@ -83,7 +83,7 @@
         /* 외계인 이미지 애니메이션 스타일 */
         .image-slider {
             position: fixed; /* 고정된 위치 */
-            top: 420px; /* 원하는 위치로 조정 */
+            top: 390px; /* 원하는 위치로 조정 */
             left: 150px; /* 원하는 위치로 조정 */
             width: 570px; /* 이미지 너비 조정 */
             height: 400px; /* 이미지 높이 조정 */
@@ -104,7 +104,7 @@
         /* 외계 고양이 애니메이션 스타일 */
         .image-slider2 {
             position: fixed; /* 고정된 위치 */
-            top: 700px; /* 원하는 위치로 조정 */
+            top: 660px; /* 원하는 위치로 조정 */
             left: 370px; /* 원하는 위치로 조정 */
             width: 300px; /* 이미지 너비 조정 */
             height: 300px; /* 이미지 높이 조정 */
@@ -155,7 +155,7 @@
         /* "숭부락페" 이미지 스타일 */
         .floating-images3 {
             position: fixed;
-            top: 280px; /* 이미지 간격 조정 */
+            top: 235px; /* 이미지 간격 조정 */
             left: 350px;
             width: 180px; /* 이미지 크기 조정 */
             height: 180px; /* 이미지 크기 조정 */
@@ -170,7 +170,7 @@
         /* "숭깊티" 이미지 스타일 */
         .floating-images4 {
             position: fixed;
-            top: 750px; /* 이미지 간격 조정 */
+            top: 690px; /* 이미지 간격 조정 */
             left: 40px;
             width: 170px; /* 이미지 크기 조정 */
             height: 170px; /* 이미지 크기 조정 */
@@ -186,7 +186,7 @@
         /* "숭베이스" 이미지 스타일 */
         .floating-images {
             position: fixed;
-            top: 450px; /* 이미지 간격 조정 */
+            top: 390px; /* 이미지 간격 조정 */
             left: 50px;
             width: 150px; /* 이미지 크기 조정 */
             height: 150px; /* 이미지 크기 조정 */
@@ -201,7 +201,7 @@
         /* "숭베이스를" 이미지 스타일 */
         .floating-images2 {
             position: fixed;
-            top: 290px; /* 이미지 간격 조정 */
+            top: 230px; /* 이미지 간격 조정 */
             left: 50px;
             width: 160px; /* 이미지 크기 조정 */
             height: 160px; /* 이미지 크기 조정 */
@@ -236,84 +236,65 @@
         }
 
         /* 반응형 스타일 */
-    @media (max-width: 768px) {
-        .btn-group-vertical {
-            position: static; /* 모바일에서는 고정된 위치 해제 */
-            display: block;
-            text-align: center;
-        }
+        @media (max-width: 768px) {
+            .btn-group-vertical {
+                position: static; /* 모바일에서는 고정된 위치 해제 */
+                display: block;
+                text-align: center;
+            }
 
-        .btn-group-vertical img {
-            width: 100%; /* 버튼 너비를 100%로 조정하여 가로 폭에 맞춤 */
-            max-width: 300px; /* 최대 너비 설정 (예시) */
-            height: auto; /* 높이는 자동으로 조정 */
-            margin: 10px 0;
-        }
+            .btn-group-vertical img {
+                width: 100%; /* 버튼 너비를 100%로 조정하여 가로 폭에 맞춤 */
+                max-width: 300px; /* 최대 너비 설정 (예시) */
+                height: auto; /* 높이는 자동으로 조정 */
+                margin: 10px 0;
+            }
 
-        .image-slider,
-        .image-slider2 {
-            position: static; /* 모바일에서는 고정된 위치 해제 */
-            width: 100%; /* 이미지 슬라이더 너비를 100%로 조정 */
-            max-width: 400px; /* 최대 너비 설정 (예시) */
-            height: auto; /* 높이는 자동으로 조정 */
-            margin-top: 20px; /* 모바일에서 슬라이더 간격 추가 */
-        }
+            .image-slider,
+            .image-slider2 {
+                position: static; /* 모바일에서는 고정된 위치 해제 */
+                width: 100%; /* 이미지 슬라이더 너비를 100%로 조정 */
+                max-width: 400px; /* 최대 너비 설정 (예시) */
+                height: auto; /* 높이는 자동으로 조정 */
+                margin-top: 20px; /* 모바일에서 슬라이더 간격 추가 */
+            }
 
-        .image-slider img,
-        .image-slider2 img {
-            width: 100%; /* 이미지 너비를 100%로 조정하여 가로 폭에 맞춤 */
-            height: auto; /* 높이는 자동으로 조정 */
-            position: relative; /* static으로 설정되어 있는 경우에 대비 */
-            opacity: 1; /* 모바일에서는 이미지 투명도 초기화 */
-        }
+            .image-slider img,
+            .image-slider2 img {
+                width: 100%; /* 이미지 너비를 100%로 조정 */
+                height: auto; /* 높이는 자동으로 조정 */
+            }
 
-        .floating-images,
-        .floating-images2,
-        .floating-images3,
-        .floating-images4,
-        .floating-images5,
-        .floating-images6 {
-            position: static; /* 모바일에서는 고정된 위치 해제 */
-            width: 100%; /* 이미지 너비를 100%로 조정하여 가로 폭에 맞춤 */
-            max-width: 200px; /* 최대 너비 설정 (예시) */
-            height: auto; /* 높이는 자동으로 조정 */
-            margin-top: 20px; /* 모바일에서 이미지 간격 추가 */
-        }
+            .floating-images5,
+            .floating-images6,
+            .floating-images3,
+            .floating-images4,
+            .floating-images,
+            .floating-images2 {
+                position: static; /* 모바일에서는 고정된 위치 해제 */
+                display: block;
+                margin: 20px auto; /* 이미지 간격 조정 및 가운데 정렬 */
+                width: 100%; /* 이미지 너비를 100%로 조정 */
+                max-width: 150px; /* 최대 너비 설정 (예시) */
+                height: auto; /* 높이는 자동으로 조정 */
+            }
 
-        .floating-images img,
-        .floating-images2 img,
-        .floating-images3 img,
-        .floating-images4 img,
-        .floating-images5 img,
-        .floating-images6 img {
-            width: 100%; /* 이미지 너비를 100%로 조정하여 가로 폭에 맞춤 */
-            height: auto; /* 높이는 자동으로 조정 */
-            position: relative; /* static으로 설정되어 있는 경우에 대비 */
-        }
+            .rotating-image {
+                animation: rotate 3s linear infinite; /* 회전 애니메이션 유지 */
+            }
 
-        .arrow {
-            display: none; /* 모바일에서 화살표 숨김 */
-        }
-    }
+            header.music-header {
+                font-size: 1.5rem; /* 모바일에서 헤더 폰트 크기 조정 */
+            }
 
-    /* 추가적인 미디어 쿼리 설정 가능 */
-    @media (max-width: 480px) {
-        .image-slider,
-        .image-slider2 {
-            max-width: 300px; /* 더 작은 화면에서는 최대 너비 줄임 */
-        }
+            h1 {
+                font-size: 2rem; /* 모바일에서 제목 폰트 크기 조정 */
+            }
 
-        .floating-images,
-        .floating-images2,
-        .floating-images3,
-        .floating-images4,
-        .floating-images5,
-        .floating-images6 {
-            max-width: 150px; /* 더 작은 화면에서는 최대 너비 줄임 */
+            p {
+                font-size: 1.2rem; /* 모바일에서 텍스트 폰트 크기 조정 */
+            }
         }
-    }
-</style>
-
     </style>
 
     
@@ -334,32 +315,32 @@
 
      <!-- "숭베이스" 이미지 -->
      <div class="floating-images">
-        <img src="숭베이스.png" alt="숭베이스" class="rotating-image">
+        <img src="숭베이스.png" alt="floating images" class="rotating-image">
     </div>
 
     <!-- "숭베이스를" 이미지 -->
     <div class="floating-images2">
-        <img src="숭베이스를.png" alt="숭베이스를" style="top: 0;">
+        <img src="숭베이스를.png" alt="floating images2" style="top: 0;">
     </div>
 
     <!-- "숭부락페" 이미지 -->
     <div class="floating-images3">
-        <img src="숭부락페.png" alt="숭베이스를" style="top: 0;">
+        <img src="숭부락페.png" alt="floating images3" style="top: 0;">
     </div>
 
     <!-- "숭깊티" 이미지 -->
     <div class="floating-images4">
-        <img src="숭깊티.png" alt="숭베이스를" style="top: 0;">
+        <img src="숭깊티.png" alt="floating images4" style="top: 0;">
     </div>
 
     <!-- "숭깊티" 이미지 -->
     <div class="floating-images5">
-        <img src="송락고양이침1.png" alt="숭베이스를" style="top: 0;">
+        <img src="송락고양이침1.png" alt="floating images5" style="top: 0;">
     </div>
 
     <!-- "숭깊티" 이미지 -->
     <div class="floating-images6">
-        <img src="송락고양이침2.png" alt="숭베이스를" style="top: 0;">
+        <img src="송락고양이침2.png" alt="floating images6" style="top: 0;">
     </div>
 
     <!-- 이미지 버튼 그룹 -->
@@ -537,7 +518,7 @@
 
                     <div class="w-100"></div>
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wecpRs9p00E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/wecpRs9p00E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>델리스파이스 - 챠우챠우</p>
                     </div>
                 </div>
