@@ -89,6 +89,18 @@
             max-width: 800px; /* 최대 너비 */
             height: auto; /* 높이는 자동 조절 */
         }
+
+        /* 미디어 쿼리 */
+        @media (max-width: 768px) {
+            .emoji {
+                font-size: 30px; /* 작은 화면에서 이모티콘 크기 줄이기 */
+            }
+            .meat, .fish, .apple, .cheese {
+                left: 20px; /* 왼쪽에 위치한 이모티콘의 위치 조정 */
+                right: 20px; /* 오른쪽에 위치한 이모티콘의 위치 조정 */
+            }
+        }
+
     </style>
 </head>
 <body class="main-page">
