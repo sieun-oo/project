@@ -234,9 +234,89 @@
             0%, 100% { opacity: 1; }
             60% { opacity: 0; }
         }
-        
+
+        /* 반응형 스타일 */
+    @media (max-width: 768px) {
+        .btn-group-vertical {
+            position: static; /* 모바일에서는 고정된 위치 해제 */
+            display: block;
+            text-align: center;
+        }
+
+        .btn-group-vertical img {
+            width: 100%; /* 버튼 너비를 100%로 조정하여 가로 폭에 맞춤 */
+            max-width: 300px; /* 최대 너비 설정 (예시) */
+            height: auto; /* 높이는 자동으로 조정 */
+            margin: 10px 0;
+        }
+
+        .image-slider,
+        .image-slider2 {
+            position: static; /* 모바일에서는 고정된 위치 해제 */
+            width: 100%; /* 이미지 슬라이더 너비를 100%로 조정 */
+            max-width: 400px; /* 최대 너비 설정 (예시) */
+            height: auto; /* 높이는 자동으로 조정 */
+            margin-top: 20px; /* 모바일에서 슬라이더 간격 추가 */
+        }
+
+        .image-slider img,
+        .image-slider2 img {
+            width: 100%; /* 이미지 너비를 100%로 조정하여 가로 폭에 맞춤 */
+            height: auto; /* 높이는 자동으로 조정 */
+            position: relative; /* static으로 설정되어 있는 경우에 대비 */
+            opacity: 1; /* 모바일에서는 이미지 투명도 초기화 */
+        }
+
+        .floating-images,
+        .floating-images2,
+        .floating-images3,
+        .floating-images4,
+        .floating-images5,
+        .floating-images6 {
+            position: static; /* 모바일에서는 고정된 위치 해제 */
+            width: 100%; /* 이미지 너비를 100%로 조정하여 가로 폭에 맞춤 */
+            max-width: 200px; /* 최대 너비 설정 (예시) */
+            height: auto; /* 높이는 자동으로 조정 */
+            margin-top: 20px; /* 모바일에서 이미지 간격 추가 */
+        }
+
+        .floating-images img,
+        .floating-images2 img,
+        .floating-images3 img,
+        .floating-images4 img,
+        .floating-images5 img,
+        .floating-images6 img {
+            width: 100%; /* 이미지 너비를 100%로 조정하여 가로 폭에 맞춤 */
+            height: auto; /* 높이는 자동으로 조정 */
+            position: relative; /* static으로 설정되어 있는 경우에 대비 */
+        }
+
+        .arrow {
+            display: none; /* 모바일에서 화살표 숨김 */
+        }
+    }
+
+    /* 추가적인 미디어 쿼리 설정 가능 */
+    @media (max-width: 480px) {
+        .image-slider,
+        .image-slider2 {
+            max-width: 300px; /* 더 작은 화면에서는 최대 너비 줄임 */
+        }
+
+        .floating-images,
+        .floating-images2,
+        .floating-images3,
+        .floating-images4,
+        .floating-images5,
+        .floating-images6 {
+            max-width: 150px; /* 더 작은 화면에서는 최대 너비 줄임 */
+        }
+    }
+</style>
 
     </style>
+
+    
 </head>
 <body class="music-page">
     <header class="music-header">
@@ -315,44 +395,44 @@
             <h2 class="centered">[💥🥵 할 일이 휘몰아칠 때 🥵💥]</h2>
             <div class="row centered">
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5hDZbroaQDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/5hDZbroaQDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>Fall Out Boy - The Phoenix</p>
                 </div>
 
                 <div class="w-100"></div>
             
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LBr7kECsjcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/LBr7kECsjcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>Fall Out Boy - Centuries</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JaIMSzE5yLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/JaIMSzE5yLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>실리카겔 - NO PAIN</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M3-0lgSTmZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/M3-0lgSTmZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>실리카겔 - T</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DIPxnt5vnhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/DIPxnt5vnhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>실리카겔 - Tick tack tock</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ewJSFX_j4vY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/ewJSFX_j4vY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>9001 - Up side down</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tbQyrUFmY6s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tbQyrUFmY6s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>너드커넥션 I Robbed a Bank</p>
                 </div>
             </div>
@@ -363,47 +443,47 @@
             <h2 class="centered">[🎵💃🏻 내적댄스 노동요 🕺🏻🎵]</h2>
             <div class="row centered">
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dboaFYdUxFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/dboaFYdUxFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>호피폴라 - Let's</p>
                 </div>
 
                 <div class="w-100"></div>
             
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pkoOa6EjDVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/pkoOa6EjDVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>바이바이배드맨 - 너의 파도</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nL5A-KNcx50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/nL5A-KNcx50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>서기 - office</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A-6XHk2BOrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/A-6XHk2BOrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>9001 - 백일홍</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oOTi-2IqwZ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/oOTi-2IqwZ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>하현상 - 불꽃놀이</p>
                 </div>
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YxhnmQIFY6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/YxhnmQIFY6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>dori - 2 O' CLOCK</p>
                 </div>
 
                 <div class="w-100"></div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nNviHu0Y9q4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/nNviHu0Y9q4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>나상현씨밴드 - 88</p>
                 </div>
                 <div class="col-md-12 mb-4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5zYab6XQHSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/5zYab6XQHSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>나상현씨밴드 - 축제</p>
                 </div>
             </div>
@@ -414,44 +494,44 @@
                 <h2 class="centered">[😇 심신의 안정 😇]</h2>
                 <div class="row centered">
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2OPsHmrWQ7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/2OPsHmrWQ7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>호피폴라 - 너의 바다</p>
                     </div>
     
                     <div class="w-100"></div>
                 
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hx3iIF2CoYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/Hx3iIF2CoYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>호피폴라 - 소랑</p>    
                     </div>
     
                     <div class="w-100"></div>
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lXM0BBjEGp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/lXM0BBjEGp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>호피폴라 - About Time</p>    
                     </div>
     
                     <div class="w-100"></div>
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_ItqdBB26fQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/_ItqdBB26fQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>하현상 - 심야영화</p>    
                     </div>
     
                     <div class="w-100"></div>
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/v2tPJbjKpYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/v2tPJbjKpYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>오월오일 - 이에르</p>    
                     </div>
 
                     <div class="w-100"></div>
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KOKU5-P8DGo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/KOKU5-P8DGo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>김마리 - 너의 이름은 맑음</p>    
                     </div>
     
                     <div class="w-100"></div>
                     <div class="col-md-12 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2wKayNiRs2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/2wKayNiRs2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>정우 - 젊은 나의 책갈피</p>    
                     </div>
 
