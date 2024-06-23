@@ -64,7 +64,7 @@
         .btn-group-vertical {
             position: fixed;
             top: 60%;
-            right: 40px;
+            right: 80px;
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
@@ -72,19 +72,19 @@
         }
 
         .btn-group-vertical img {
-            width: 250px;  /* 버튼 너비 설정 */
-            height: 200px; /* 버튼 높이 설정 */
+            width: 300px;  /* 버튼 너비 설정 */
+            height: 250px; /* 버튼 높이 설정 */
             margin: 10px 0;
             cursor: pointer;
             border-radius: 20%;
             border: transparent; /* 버튼 테두리 색상 */
         }
 
-        /* 이미지 애니메이션 스타일 */
+        /* 외계인 이미지 애니메이션 스타일 */
         .image-slider {
             position: fixed; /* 고정된 위치 */
-            top: 450px; /* 원하는 위치로 조정 */
-            left: 70px; /* 원하는 위치로 조정 */
+            top: 350px; /* 원하는 위치로 조정 */
+            left: 150px; /* 원하는 위치로 조정 */
             width: 570px; /* 이미지 너비 조정 */
             height: 400px; /* 이미지 높이 조정 */
             overflow: hidden;
@@ -101,10 +101,61 @@
             opacity: 1;
         }
 
+        /* 외계 고양이 애니메이션 스타일 */
+        .image-slider2 {
+            position: fixed; /* 고정된 위치 */
+            top: 670px; /* 원하는 위치로 조정 */
+            left: 370px; /* 원하는 위치로 조정 */
+            width: 300px; /* 이미지 너비 조정 */
+            height: 300px; /* 이미지 높이 조정 */
+            overflow: hidden;
+        }
+
+        .image-slider2 img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .image-slider2 img.active {
+            opacity: 1;
+        }
+
+        /* 송락고양이침1 이미지 스타일 */
+        .floating-images5 {
+            position: fixed;
+            top: 25%;
+            right: 540px;
+            width: 150px; /* 이미지 크기 조정 */
+            height: 150px; /* 이미지 크기 조정 */
+        }
+
+        .floating-images5 img {
+            position: absolute;
+            width: 150%;
+            height: auto;
+        }
+
+        /* 송락고양이침2 이미지 스타일 */
+        .floating-images6 {
+            position: fixed;
+            top: 57%;
+            right: 540px;
+            width: 150px; /* 이미지 크기 조정 */
+            height: 150px; /* 이미지 크기 조정 */
+        }
+
+        .floating-images6 img {
+            position: absolute;
+            width: 150%;
+            height: auto;
+        }
+
         /* "숭부락페" 이미지 스타일 */
         .floating-images3 {
             position: fixed;
-            top: 250px; /* 이미지 간격 조정 */
+            top: 200px; /* 이미지 간격 조정 */
             left: 350px;
             width: 180px; /* 이미지 크기 조정 */
             height: 180px; /* 이미지 크기 조정 */
@@ -116,11 +167,26 @@
             height: auto;
         }
 
+        /* "숭깊티" 이미지 스타일 */
+        .floating-images4 {
+            position: fixed;
+            top: 700px; /* 이미지 간격 조정 */
+            left: 40px;
+            width: 170px; /* 이미지 크기 조정 */
+            height: 170px; /* 이미지 크기 조정 */
+        }
+
+        .floating-images4 img {
+            position: absolute;
+            width: 110%;
+            height: auto;
+        }
+
 
         /* "숭베이스" 이미지 스타일 */
         .floating-images {
             position: fixed;
-            top: 330px; /* 이미지 간격 조정 */
+            top: 380px; /* 이미지 간격 조정 */
             left: 50px;
             width: 150px; /* 이미지 크기 조정 */
             height: 150px; /* 이미지 크기 조정 */
@@ -135,10 +201,10 @@
         /* "숭베이스를" 이미지 스타일 */
         .floating-images2 {
             position: fixed;
-            top: 200px; /* 이미지 간격 조정 */
-            left: 80px;
-            width: 140px; /* 이미지 크기 조정 */
-            height: 140px; /* 이미지 크기 조정 */
+            top: 210px; /* 이미지 간격 조정 */
+            left: 50px;
+            width: 160px; /* 이미지 크기 조정 */
+            height: 160px; /* 이미지 크기 조정 */
         }
 
         .floating-images2 img {
@@ -154,6 +220,19 @@
         @keyframes rotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
+        }
+
+        /* 화살표 애니메이션 */
+        .arrow {
+            position: absolute;
+            left: -100px; /* 화살표를 이미지의 왼쪽에 배치 */
+            font-size: 2rem; /* 화살표 크기 조정 */
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            60% { opacity: 0; }
         }
 
     </style>
@@ -187,17 +266,47 @@
         <img src="숭부락페.png" alt="숭베이스를" style="top: 0;">
     </div>
 
-    <!-- 이미지 버튼 그룹 -->
-    <div class="btn-group-vertical">
-        <a href="#band"><img src="숭날벼락.png" alt="할 일이 휘몰아칠 때"></a>
-        <a href="#rock"><img src="숭꼼지락.png" alt="내적댄스 노동요"></a>
-        <a href="#simsin"><img src="숭오락가락.png"" alt="심신의 안정"></a>
+    <!-- "숭깊티" 이미지 -->
+    <div class="floating-images4">
+        <img src="숭깊티.png" alt="숭베이스를" style="top: 0;">
     </div>
+
+    <!-- "숭깊티" 이미지 -->
+    <div class="floating-images5">
+        <img src="송락고양이침1.png" alt="숭베이스를" style="top: 0;">
+    </div>
+
+    <!-- "숭깊티" 이미지 -->
+    <div class="floating-images6">
+        <img src="송락고양이침2.png" alt="숭베이스를" style="top: 0;">
+    </div>
+
+    <!-- 이미지 버튼 그룹 -->
+<div class="btn-group-vertical">
+    <div class="image-container">
+        <span class="arrow" id="arrow"><img src="커서2.png" alt="화살표" style="width: 80px; height: 140px;"></span>
+        <a href="#band"><img src="숭날벼락.png" alt="할 일이 휘몰아칠 때"></a>
+    </div>
+    <div class="image-container">
+        <span class="arrow" id="arrow"><img src="커서2.png" alt="화살표" style="width: 80px; height: 140px;"></span>
+        <a href="#rock"><img src="숭꼼지락.png" alt="내적댄스 노동요"></a>
+    </div>
+    <div class="image-container">
+        <span class="arrow" id="arrow"><img src="커서2.png" alt="화살표" style="width: 80px; height: 140px;"></span>
+        <a href="#simsin"><img src="숭오락가락.png" alt="심신의 안정"></a>
+    </div>
+</div>
 
     <!-- 슬라이딩 이미지 영역 -->
     <div class="image-slider">
         <img src="숭외계인1.png" alt="Image 1" class="active">
         <img src="숭외계인2.png" alt="Image 2">
+    </div>
+
+    <!-- 슬라이딩 이미지 영역 -->
+    <div class="image-slider2">
+        <img src="송락고양이1.png" alt="Image 1" class="active">
+        <img src="송락고양이2.png" alt="Image 2">
     </div>
 
     <div class="container mt-5">
@@ -361,17 +470,39 @@
 
     <!-- JavaScript 코드는 문서의 마지막에 추가 -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener("DOMContentLoaded", function () {
+            // 외계인 이미지 슬라이더
+            let currentIndex = 0;
             const images = document.querySelectorAll('.image-slider img');
-            let currentImageIndex = 0;
+            const totalImages = images.length;
 
-            function showNextImage() {
-                images[currentImageIndex].classList.remove('active');
-                currentImageIndex = (currentImageIndex + 1) % images.length;
-                images[currentImageIndex].classList.add('active');
-            }
+            setInterval(() => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].classList.add('active');
+            }, 700); // 0.7초마다 이미지 변경
 
-            setInterval(showNextImage, 700); // 0.7초마다 이미지 전환
+            // 외계 고양이 이미지 슬라이더
+            let currentIndex2 = 0;
+            const images2 = document.querySelectorAll('.image-slider2 img');
+            const totalImages2 = images2.length;
+
+            setInterval(() => {
+                images2[currentIndex2].classList.remove('active');
+                currentIndex2 = (currentIndex2 + 1) % totalImages2;
+                images2[currentIndex2].classList.add('active');
+            }, 700); // 0.7초마다 이미지 변경
+
+            // 화살표 애니메이션
+            const arrows = document.querySelectorAll('.arrow');
+            let arrowIndex = 0;
+
+            setInterval(() => {
+                arrows.forEach((arrow, index) => {
+                    arrow.style.opacity = index === arrowIndex ? '1' : '0';
+                });
+                arrowIndex = (arrowIndex + 1) % arrows.length;
+            }, 3000); // 3초마다 화살표 깜빡임
         });
     </script>
 
